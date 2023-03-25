@@ -1,0 +1,25 @@
+server:
+  port: 8179
+  servlet:
+    context-path: /auth
+spring:
+  main:
+    #允许我们自己覆盖spring放入到IOC容器的对象
+    allow-bean-definition-overriding: true
+  application:
+    name: auth-server
+  cloud:
+    nacos:
+      config:
+        enabled: true
+        server-addr: 175.178.11.232:8848
+        namespace: 245b1675-f74e-48c6-8cc1-1c89c797ee33
+        group: cloudDemo
+        file-extension: yml
+        username: develop
+        password: develop
+      discovery:
+        enabled: true
+        server-addr: 175.178.11.232:8848
+        namespace: 245b1675-f74e-48c6-8cc1-1c89c797ee33
+        group: cloudDemo

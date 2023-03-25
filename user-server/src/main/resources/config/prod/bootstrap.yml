@@ -1,0 +1,22 @@
+server:
+  port: 8079
+  servlet:
+    context-path: /user
+spring:
+  application:
+    name: user-server
+  cloud:
+    nacos:
+      config:
+        enabled: true
+        server-addr: 175.178.11.232:8848
+        namespace: d04e69d8-5aa4-4a69-9a9d-5c0d32f86a35
+        group: cloudDemo
+        file-extension: yaml
+        username: develop
+        password: develop
+      discovery:
+        enabled: true
+        server-addr: 175.178.11.232:8848
+        namespace: d04e69d8-5aa4-4a69-9a9d-5c0d32f86a35
+        group: cloudDemo

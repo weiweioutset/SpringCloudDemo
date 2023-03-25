@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: common
+#  cloud:
+#    nacos:
+#      config:
+#        enabled: true
+#        server-addr: 175.178.11.232:8848
+#        namespace: 245b1675-f74e-48c6-8cc1-1c89c797ee33
+#        group: cloudDemo
+#        file-extension: properties
+#        username: develop
+#        password: develop

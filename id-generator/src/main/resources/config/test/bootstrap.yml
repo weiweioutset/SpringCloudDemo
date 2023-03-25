@@ -1,0 +1,28 @@
+server:
+  port: 9888
+  servlet:
+    context-path: /id-generator
+spring:
+  main:
+    #允许我们自己覆盖spring放入到IOC容器的对象
+    allow-bean-definition-overriding: true
+  application:
+    name: id-generator
+  cloud:
+    nacos:
+      config:
+        enabled: true
+        server-addr: 175.178.11.232:8848
+        namespace: 605e9930-64f2-491f-aeb2-a7d82f4d30a5
+        group: cloudDemo
+        file-extension: yaml
+        username: develop
+        password: develop
+      discovery:
+        enabled: true
+        server-addr: 175.178.11.232:8848
+        namespace: 605e9930-64f2-491f-aeb2-a7d82f4d30a5
+        group: cloudDemo
+logging:
+  level:
+    org.springframework.jdbc.core.JdbcTemplate: DEBUG

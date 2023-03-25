@@ -1,0 +1,101 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="common:war exploded">
+    <output-path>$PROJECT_DIR$/common/target/common-1.0-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>common</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="common" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-core:5.8.1" />
+          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-ioc:5.8.1" />
+          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-func:5.8.1" />
+          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry5-annotations:5.8.1" />
+          <element id="library" level="project" name="Maven: org.apache.tapestry:plastic:5.8.1" />
+          <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-json:5.8.1" />
+          <element id="library" level="project" name="Maven: org.apache.tapestry:beanmodel:5.8.1" />
+          <element id="library" level="project" name="Maven: org.apache.tapestry:commons:5.8.1" />
+          <element id="library" level="project" name="Maven: org.antlr:antlr:3.5.2" />
+          <element id="library" level="project" name="Maven: org.antlr:ST4:4.0.8" />
+          <element id="library" level="project" name="Maven: org.antlr:antlr-runtime:3.5.2" />
+          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-http:5.8.1" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.11.0" />
+          <element id="library" level="project" name="Maven: jakarta.annotation:jakarta.annotation-api:1.3.4" />
+          <element id="library" level="project" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.2" />
+          <element id="library" level="project" name="Maven: jakarta.activation:jakarta.activation-api:1.2.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:jaxb-runtime:2.3.2" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:txw2:2.3.2" />
+          <element id="library" level="project" name="Maven: com.sun.istack:istack-commons-runtime:3.0.8" />
+          <element id="library" level="project" name="Maven: org.jvnet.staxex:stax-ex:1.8.1" />
+          <element id="library" level="project" name="Maven: com.sun.xml.fastinfoset:FastInfoset:1.2.16" />
+          <element id="library" level="project" name="Maven: com.sun.xml.ws:jaxws-rt:2.3.2" />
+          <element id="library" level="project" name="Maven: jakarta.xml.ws:jakarta.xml.ws-api:2.3.2" />
+          <element id="library" level="project" name="Maven: jakarta.xml.soap:jakarta.xml.soap-api:1.4.1" />
+          <element id="library" level="project" name="Maven: jakarta.jws:jakarta.jws-api:1.1.1" />
+          <element id="library" level="project" name="Maven: com.sun.xml.ws:policy:2.7.6" />
+          <element id="library" level="project" name="Maven: org.glassfish.gmbal:gmbal:4.0.0" />
+          <element id="library" level="project" name="Maven: org.glassfish.external:management-api:3.2.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.pfl:pfl-basic:4.0.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.pfl:pfl-tf:4.0.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.pfl:pfl-asm:4.0.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.pfl:pfl-dynamic:4.0.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.pfl:pfl-basic-tools:4.0.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.pfl:pfl-tf-tools:4.0.1" />
+          <element id="library" level="project" name="Maven: com.sun.xml.stream.buffer:streambuffer:1.5.7" />
+          <element id="library" level="project" name="Maven: org.jvnet.mimepull:mimepull:1.9.11" />
+          <element id="library" level="project" name="Maven: org.glassfish.ha:ha-api:3.1.12" />
+          <element id="library" level="project" name="Maven: com.sun.xml.messaging.saaj:saaj-impl:1.5.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.woodstox:woodstox-core:5.1.0" />
+          <element id="library" level="project" name="Maven: org.codehaus.woodstox:stax2-api:4.1" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.10" />
+          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-webresources:5.8.1" />
+          <element id="library" level="project" name="Maven: com.github.sommeri:less4j:1.12.0" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.3" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
+          <element id="library" level="project" name="Maven: org.json:json:20090211" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:2.5.0" />
+          <element id="library" level="project" name="Maven: com.google.javascript:closure-compiler-unshaded:v20200504" />
+          <element id="library" level="project" name="Maven: com.google.javascript:closure-compiler-externs:v20200504" />
+          <element id="library" level="project" name="Maven: args4j:args4j:2.0.26" />
+          <element id="library" level="project" name="Maven: com.google.errorprone:error_prone_annotations:2.3.1" />
+          <element id="library" level="project" name="Maven: com.google.guava:guava:25.1-jre" />
+          <element id="library" level="project" name="Maven: org.checkerframework:checker-qual:2.0.0" />
+          <element id="library" level="project" name="Maven: com.google.j2objc:j2objc-annotations:1.1" />
+          <element id="library" level="project" name="Maven: org.codehaus.mojo:animal-sniffer-annotations:1.14" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.7" />
+          <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:3.0.1" />
+          <element id="library" level="project" name="Maven: com.google.jsinterop:jsinterop-annotations:1.0.2" />
+          <element id="library" level="project" name="Maven: com.google.jsinterop:base:1.0.0" />
+          <element id="library" level="project" name="Maven: com.google.elemental2:elemental2-core:1.0.0-RC1" />
+          <element id="library" level="project" name="Maven: com.google.re2j:re2j:1.3" />
+          <element id="library" level="project" name="Maven: org.mozilla:rhino:1.7.7.2" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.17.2" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-core:2.17.2" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-slf4j-impl:2.17.2" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
+          <element id="library" level="project" name="Maven: org.eclipse:yasson:2.0.4" />
+          <element id="library" level="project" name="Maven: jakarta.json.bind:jakarta.json.bind-api:2.0.0" />
+          <element id="library" level="project" name="Maven: jakarta.json:jakarta.json-api:2.0.0" />
+          <element id="library" level="project" name="Maven: org.glassfish:jakarta.json:module:2.0.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.13.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.13.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.13.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.1" />
+          <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.28" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/common/target/common-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="common/web/Web" />
+    </root>
+  </artifact>
+</component>

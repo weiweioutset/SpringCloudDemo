@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cloud.demo.mapper.FriendMapper">
+    <update id="updateApplyStatus" parameterType="com.cloud.demo.po.Friend">
+        UPDATE t_friends SET apply_status = #{applyStatus}
+        WHERE user_id = #{userId} AND friend_id = #{friendId}
+    </update>
+
+    <select id="listFriends" resultMap="friendVoMap">
+        SELECT friend_id,create_time,remark,focus,block,apply_status ,
+               user_name AS nickName,thumbnail_avatar AS avatarUrl
+        FROM t_friends
+        INNER JOIN user_info ON friend_id = account_id AND `status` = 1
+        WHERE user_id = #{userId} AND apply_status = 1 AND block = #{block}
+    </select>
+
+    <select id="listChatsOnlyFriends" resultMap="friendVoMap">
+        SELECT friend_id,create_time,remark,focus,block,apply_status ,
+               user_name AS nickName,thumbnail_avatar AS avatarUrl
+        FROM t_friends
+        INNER JOIN user_info ON friend_id = account_id AND `status` = 1
+        WHERE user_id = #{userId} AND apply_status = 1 AND block = 0 AND chats_only = 1
+    </select>
+
+    <select id="listShouldShowMomentFriends" resultType="Long">
+        SELECT t2.user_id FROM
+        t_friends t1
+        INNER JOIN t_friends t2 ON t1.friend_id = t2.user_id AND t1.user_id = t2.friend_id AND t2.apply_status = 1
+        WHERE t1.user_id = #{userId} AND t1.apply_status = 1
+        AND t1.hide_my_posts = 0 AND t2.hide_his_posts = 0
+    </select>
+
+    <select id="canVisitMoments" resultType="Integer">
+        SELECT COUNT(t2.user_id) FROM
+        t_friends t1
+        INNER JOIN t_friends t2 ON t1.friend_id = t2.user_id AND t1.user_id = t2.friend_id AND t2.apply_status = 1
+        WHERE t1.user_id = #{userId} AND t1.apply_status = 1
+        AND t2.hide_my_posts = 0 AND t1.hide_his_posts = 0
+        AND t2.user_id = #{friendId}
+    </select>
+
+    <resultMap id="friendVoMap" type="com.cloud.demo.vo.FriendVo">
+        <result column="user_id" property="userId"/>
+        <result column="friend_id" property="friendId"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="chats_only" property="chatsOnly"/>
+        <result column="hide_my_posts" property="hideMyPosts"/>
+        <result column="hide_his_posts" property="hideHisPosts"/>
+        <result column="from_source" property="fromSource"/>
+        <result column="apply_status" property="applyStatus"/>
+    </resultMap>
+</mapper>

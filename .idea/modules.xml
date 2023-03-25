@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringCloudDemo.iml" filepath="$PROJECT_DIR$/SpringCloudDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auth-server/auth-server.iml" filepath="$PROJECT_DIR$/auth-server/auth-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common-redis/common-redis.iml" filepath="$PROJECT_DIR$/common/common-redis/common-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/datasource/datasource.iml" filepath="$PROJECT_DIR$/common/datasource/datasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/file-server/file-server.iml" filepath="$PROJECT_DIR$/file-server/file-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/id-generator/id-generator.iml" filepath="$PROJECT_DIR$/id-generator/id-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/moments-server/moments-server.iml" filepath="$PROJECT_DIR$/moments-server/moments-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-server/user-server.iml" filepath="$PROJECT_DIR$/user-server/user-server.iml" />
+    </modules>
+  </component>
+</project>

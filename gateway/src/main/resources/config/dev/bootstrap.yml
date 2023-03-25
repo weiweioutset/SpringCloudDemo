@@ -1,0 +1,23 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: gateway-server
+  cloud:
+    nacos:
+      config:
+        enabled: true
+        server-addr: 175.178.11.232:8848
+        namespace: 245b1675-f74e-48c6-8cc1-1c89c797ee33
+        group: cloudDemo
+        file-extension: yaml
+        username: develop
+        password: develop
+      discovery:
+        enabled: true
+        server-addr: 175.178.11.232:8848
+        namespace: 245b1675-f74e-48c6-8cc1-1c89c797ee33
+        group: cloudDemo
+  web:
+    resources:
+      static-locations: file:/home/weiwei/Develop/uploadFile/
